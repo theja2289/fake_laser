@@ -41,7 +41,7 @@ int main(int argc, char** argv){
     scan.angle_max = 135 * (PI/180); //angle correspond to LAST beam in scan ( in rad)
     scan.angle_increment = 0.25 * (PI/180); // Angular resolution i.e angle between 2 beams
     scan.time_increment = (1 / 50) / (1081); 
-    scan.range_min = 0.06;
+    scan.range_min = 0.02;
     scan.range_max = 20.0;
 
     scan.ranges.resize(num_readings);
