@@ -14,7 +14,7 @@ int main(int argc, char** argv){
   ros::Publisher scan_pub = n.advertise<sensor_msgs::LaserScan>("scan", 50);
 
 
-  //the following values are based on hokuyo URG-04LX-UG01 laser scanner and http://answers.ros.org/question/198843/need-explanation-on-sensor_msgslaserscanmsg/
+  //the following values are based on Hokuyo UST-20LX laser scanner and http://answers.ros.org/question/198843/need-explanation-on-sensor_msgslaserscanmsg/
 
   unsigned int num_readings = 1081;
   double laser_frequency = 50;
@@ -27,7 +27,7 @@ int main(int argc, char** argv){
   while(n.ok()){
     //generate some fake data for our laser scan
     for(unsigned int i = 0; i < num_readings; ++i){
-      ranges[i] = 4 - (0.03*4*double(rand())/double(RAND_MAX));
+      ranges[i] = 4 - (0.04*double(rand())/double(RAND_MAX));
       intensities[i] = 10;
     }
     ros::Time scan_time = ros::Time::now();

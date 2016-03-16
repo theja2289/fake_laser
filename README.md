@@ -45,5 +45,5 @@ roslaunch fake_laser fake_laser.launch
 ## Notes
 * Reference 1:(http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors)
 * Reference 2:(http://answers.ros.org/question/198843/need-explanation-on-sensor_msgslaserscanmsg)
-* assumptions based on hokuyo URG-04LX-UG01 laser scanner
+* assumptions based on Hokuyo UST-20LX  laser scanner
 * base_link to base_laser transform was obtained from `Freight Robot` from `Fetch Robotics Inc.`
