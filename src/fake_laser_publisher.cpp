@@ -27,7 +27,7 @@ int main(int argc, char** argv){
   while(n.ok()){
     //generate some fake data for our laser scan
     for(unsigned int i = 0; i < num_readings; ++i){
-      ranges[i] = 4 - (0.04*double(rand())/double(RAND_MAX));
+      ranges[i] = 4 - (0.04*double(rand())/double(RAND_MAX));//assuming a wall thats 4 m surrounding the robot from all sides 
       intensities[i] = 10;
     }
     ros::Time scan_time = ros::Time::now();
